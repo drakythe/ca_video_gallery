@@ -10,16 +10,6 @@ include_once('ca_video_gallery.features.inc');
  * Implements hook_menu()
  */
 function ca_video_gallery_menu() {
-/**  $items['admin/config/worx_features'] = array(
-    'title' => 'Worx Features',
-    'description' => 'Configure Worx Features',
-    'position' => 'right',
-    'weight' => -20,
-    'page callback' => 'system_admin_menu_block_page',
-    'access arguments' => array('access administration pages'),
-    'file' => 'system.admin.inc',
-    'file path' => drupal_get_path('module', 'system'),
-  );*/
   $items['admin/config/worx_features/video_gallery'] = array(
     'title' => 'Video Gallery Configuration',
     'description' => 'Override settings for ca_video_gallery',
