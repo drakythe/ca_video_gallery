@@ -50,3 +50,21 @@ function ca_video_gallery_menu() {
 function ca_video_gallery_menu_alter(&$items) {
   $items['video_gallery']['title'] = variable_get('ca_video_gallery_menu_title', 'Videos');
 }
+
+/**
+ * Implements hook_panels_pre_render().
+ */
+function ca_video_gallery_panels_pre_render($panel, $renderer) {
+  if (isset($panel->content['9']) && $panel->content['9']->subtype == 'ca_video-ca_video_gallery_list_1') {
+    $panel->title = variable_get('ca_video_gallery_panel_title', 'Videos');
+  }
+}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function ca_video_gallery_views_pre_view(&$view, &$display_id, &$args) {
+  if ($display_id == 'ca_video_gallery_list_1') {
+    $view->set_items_per_page(variable_get('ca_video_gallery_list_count', 20));
+  }
+}

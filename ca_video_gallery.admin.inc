@@ -24,6 +24,20 @@ function ca_video_gallery_settings_form() {
     '#required' => TRUE,
     '#description' => t('What would you like the menu title to be?'),
   );
+  $form['ca_video_gallery_panel_title'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Panel Title'),
+    '#default_value' => variable_get('ca_video_gallery_panel_title', 'Videos'),
+    '#required' => TRUE,
+    '#description' => t('What would you like the panel title to be?'),
+  );
+  $form['ca_video_gallery_list_count'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Videos per page'),
+    '#default_value' => variable_get('ca_video_gallery_list_count', 20),
+    '#required' => TRUE,
+    '#description' => t('How many videos would you like displayed per page?'),
+  );
   
   return system_settings_form($form);
 }
