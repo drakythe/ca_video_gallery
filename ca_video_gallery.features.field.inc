@@ -10,7 +10,7 @@
 function ca_video_gallery_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'comment-comment_node_ca_video-comment_body'
+  // Exported field: 'comment-comment_node_ca_video-comment_body'.
   $fields['comment-comment_node_ca_video-comment_body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -33,6 +33,7 @@ function ca_video_gallery_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -71,7 +72,7 @@ function ca_video_gallery_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-ca_video-body'
+  // Exported field: 'node-ca_video-body'.
   $fields['node-ca_video-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -94,6 +95,7 @@ function ca_video_gallery_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -143,7 +145,7 @@ function ca_video_gallery_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-ca_video-field_ca_video_v_video'
+  // Exported field: 'node-ca_video-field_ca_video_v_video'.
   $fields['node-ca_video-field_ca_video_v_video'] = array(
     'field_config' => array(
       'active' => '1',
@@ -164,6 +166,7 @@ function ca_video_gallery_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'file',
       'settings' => array(
         'display_default' => 0,
