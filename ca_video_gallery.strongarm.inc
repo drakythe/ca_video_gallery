@@ -14,7 +14,7 @@ function ca_video_gallery_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_ca_video';
-  $strongarm->value = 'edit-menu';
+  $strongarm->value = 'edit-weight-settings';
   $export['additional_settings__active_tab_ca_video'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -69,6 +69,64 @@ function ca_video_gallery_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_file__video';
+  $strongarm->value = array(
+    'view_modes' => array(
+      'media_link' => array(
+        'custom_settings' => TRUE,
+      ),
+      'media_preview' => array(
+        'custom_settings' => TRUE,
+      ),
+      'media_small' => array(
+        'custom_settings' => TRUE,
+      ),
+      'media_large' => array(
+        'custom_settings' => TRUE,
+      ),
+      'media_original' => array(
+        'custom_settings' => TRUE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
+    'extra_fields' => array(
+      'form' => array(),
+      'display' => array(
+        'file' => array(
+          'media_small' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'default' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'token' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'full' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'media_link' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
+    ),
+  );
+  $export['field_bundle_settings_file__video'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_ca_video';
   $strongarm->value = array();
   $export['menu_options_ca_video'] = $strongarm;
@@ -116,6 +174,34 @@ function ca_video_gallery_strongarm() {
   $strongarm->name = 'save_continue_ca_video';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_ca_video'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'weight_default_ca_video';
+  $strongarm->value = '0';
+  $export['weight_default_ca_video'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'weight_enabled_ca_video';
+  $strongarm->value = '1';
+  $export['weight_enabled_ca_video'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'weight_menu_ca_video';
+  $strongarm->value = '0';
+  $export['weight_menu_ca_video'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'weight_range_ca_video';
+  $strongarm->value = '50';
+  $export['weight_range_ca_video'] = $strongarm;
 
   return $export;
 }
