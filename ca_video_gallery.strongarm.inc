@@ -71,52 +71,14 @@ function ca_video_gallery_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_file__video';
   $strongarm->value = array(
-    'view_modes' => array(
-      'media_link' => array(
-        'custom_settings' => TRUE,
-      ),
-      'media_preview' => array(
-        'custom_settings' => TRUE,
-      ),
-      'media_small' => array(
-        'custom_settings' => TRUE,
-      ),
-      'media_large' => array(
-        'custom_settings' => TRUE,
-      ),
-      'media_original' => array(
-        'custom_settings' => TRUE,
-      ),
-      'token' => array(
-        'custom_settings' => FALSE,
-      ),
-      'full' => array(
-        'custom_settings' => FALSE,
-      ),
-    ),
+    'view_modes' => array(),
     'extra_fields' => array(
       'form' => array(),
       'display' => array(
         'file' => array(
           'media_small' => array(
-            'weight' => '0',
-            'visible' => TRUE,
-          ),
-          'default' => array(
-            'weight' => '0',
-            'visible' => TRUE,
-          ),
-          'token' => array(
-            'weight' => '0',
-            'visible' => TRUE,
-          ),
-          'full' => array(
-            'weight' => '0',
-            'visible' => TRUE,
-          ),
-          'media_link' => array(
-            'weight' => '0',
-            'visible' => TRUE,
+            'weight' => 0,
+            'visible' => FALSE,
           ),
         ),
       ),

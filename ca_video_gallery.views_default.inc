@@ -61,7 +61,7 @@ function ca_video_gallery_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: AddToAny link */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['addtoany_link']['id'] = 'addtoany_link';
   $handler->display->display_options['fields']['addtoany_link']['table'] = 'node';
   $handler->display->display_options['fields']['addtoany_link']['field'] = 'addtoany_link';
@@ -139,7 +139,7 @@ function ca_video_gallery_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: AddToAny link */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['addtoany_link']['id'] = 'addtoany_link';
   $handler->display->display_options['fields']['addtoany_link']['table'] = 'node';
   $handler->display->display_options['fields']['addtoany_link']['field'] = 'addtoany_link';
@@ -192,7 +192,7 @@ function ca_video_gallery_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: AddToAny link */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['addtoany_link']['id'] = 'addtoany_link';
   $handler->display->display_options['fields']['addtoany_link']['table'] = 'node';
   $handler->display->display_options['fields']['addtoany_link']['field'] = 'addtoany_link';
@@ -245,7 +245,7 @@ function ca_video_gallery_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: AddToAny link */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['addtoany_link']['id'] = 'addtoany_link';
   $handler->display->display_options['fields']['addtoany_link']['table'] = 'node';
   $handler->display->display_options['fields']['addtoany_link']['field'] = 'addtoany_link';
@@ -255,7 +255,7 @@ function ca_video_gallery_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Video Gallery: Video List View Template Four';
 
   /* Display: CA Video Gallery: Video Admin */
-  $handler = $view->new_display('panel_pane', 'CA Video Gallery: Video Admin', 'panel_pane_2');
+  $handler = $view->new_display('panel_pane', 'CA Video Gallery: Video Admin', 'ca_video_gallery_video_admin');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
@@ -459,7 +459,7 @@ function ca_video_gallery_views_default_views() {
   $handler->display->display_options['inherit_panels_path'] = '1';
 
   /* Display: CA Video Gallery: Video Sort */
-  $handler = $view->new_display('panel_pane', 'CA Video Gallery: Video Sort', 'panel_pane_3');
+  $handler = $view->new_display('panel_pane', 'CA Video Gallery: Video Sort', 'ca_video_gallery_video_sort');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
@@ -509,7 +509,7 @@ function ca_video_gallery_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Video Gallery: Video Sort';
 
   /* Display: CA Video Galler: Video Node View One */
-  $handler = $view->new_display('panel_pane', 'CA Video Galler: Video Node View One', 'panel_pane_4');
+  $handler = $view->new_display('panel_pane', 'CA Video Galler: Video Node View One', 'ca_video_gallery_node_view_one');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
@@ -561,7 +561,7 @@ function ca_video_gallery_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Video Galler: Video Node View One';
 
   /* Display: CA Video Galler: Video Node View Two */
-  $handler = $view->new_display('panel_pane', 'CA Video Galler: Video Node View Two', 'panel_pane_7');
+  $handler = $view->new_display('panel_pane', 'CA Video Galler: Video Node View Two', 'ca_video_gallery_node_view_two');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
