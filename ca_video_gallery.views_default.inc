@@ -33,6 +33,7 @@ function ca_video_gallery_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['style_plugin'] = 'grid';
+  $handler->display->display_options['style_options']['columns'] = '3';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Path */
   $handler->display->display_options['fields']['path']['id'] = 'path';
@@ -52,7 +53,7 @@ function ca_video_gallery_views_default_views() {
   $handler->display->display_options['fields']['field_ca_video_v_video']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_video_v_video']['type'] = 'file_rendered';
   $handler->display->display_options['fields']['field_ca_video_v_video']['settings'] = array(
-    'file_view_mode' => 'media_link',
+    'file_view_mode' => 'worxco_video_displays_small',
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -424,7 +425,7 @@ function ca_video_gallery_views_default_views() {
   $handler->display->display_options['fields']['field_ca_video_v_video']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_video_v_video']['type'] = 'file_rendered';
   $handler->display->display_options['fields']['field_ca_video_v_video']['settings'] = array(
-    'file_view_mode' => 'media_small',
+    'file_view_mode' => 'worxco_video_displays_teaser',
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -498,7 +499,7 @@ function ca_video_gallery_views_default_views() {
   $handler->display->display_options['fields']['field_ca_video_v_video']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_video_v_video']['type'] = 'file_rendered';
   $handler->display->display_options['fields']['field_ca_video_v_video']['settings'] = array(
-    'file_view_mode' => 'media_small',
+    'file_view_mode' => 'worxco_video_displays_teaser',
   );
   /* Field: Weight: Weight */
   $handler->display->display_options['fields']['weight']['id'] = 'weight';
@@ -532,7 +533,7 @@ function ca_video_gallery_views_default_views() {
   $handler->display->display_options['fields']['field_ca_video_v_video']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_video_v_video']['type'] = 'file_rendered';
   $handler->display->display_options['fields']['field_ca_video_v_video']['settings'] = array(
-    'file_view_mode' => 'media_large',
+    'file_view_mode' => 'worxco_video_displays_large',
   );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Nid */
