@@ -8,7 +8,7 @@
 function ca_video_gallery_install() {  
   // Update the imce roles profiles to set the Admin and writer role.
   $imce_roles_profiles = variable_get('imce_roles_profiles');
-	
+
   $imce_roles_profiles_vaule = array (
     'weight' => '-9',
     'public_pid' => 2,
