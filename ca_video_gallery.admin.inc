@@ -38,6 +38,28 @@ function ca_video_gallery_settings_form() {
     '#required' => TRUE,
     '#description' => t('How many videos would you like displayed per page?'),
   );
+  $form['ca_video_gallery_list_template'] = array(
+    '#type' => 'select',
+    '#title' => t('Video Gallery\'s list template'),
+    '#options' => array(
+      'ca_video_gallery_list_template_one' => t('Template one'),
+      'ca_video_gallery_list_template_two' => t('Template two'),
+      'ca_video_gallery_list_template_three' => t('Template three'),
+      'ca_video_gallery_list_template_four' => t('Template four'),
+    ),
+    '#required' => TRUE,
+    '#default_value' => variable_get('ca_video_gallery_list_template', 'ca_video_gallery_list_template_one'),
+  );
+  $form['ca_video_gallery_node_template'] = array(
+    '#type' => 'select',
+    '#title' => t('Video Gallery\'s node template'),
+    '#options' => array(
+      'ca_video_gallery_node_template_one' => t('Template one'),
+      'ca_video_gallery_node_template_two' => t('Template two'),
+    ),
+    '#required' => TRUE,
+    '#default_value' => variable_get('ca_video_gallery_node_template', 'ca_video_gallery_node_template_one'),
+  );
   
   return system_settings_form($form);
 }
