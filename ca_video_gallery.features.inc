@@ -26,7 +26,7 @@ function ca_video_gallery_ctools_plugin_api() {
  * Implements hook_views_api().
  */
 function ca_video_gallery_views_api() {
-  return array("version" => "3.0");
+  return array("api" => "3.0");
 }
 
 /**
@@ -49,10 +49,10 @@ function ca_video_gallery_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '640',
-          'height' => '480',
+          'width' => 640,
+          'height' => 480,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );
@@ -71,10 +71,10 @@ function ca_video_gallery_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '560',
-          'height' => '420',
+          'width' => 560,
+          'height' => 420,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );
@@ -93,10 +93,10 @@ function ca_video_gallery_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '240',
-          'height' => '180',
+          'width' => 240,
+          'height' => 180,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );
@@ -119,4 +119,21 @@ function ca_video_gallery_node_info() {
     ),
   );
   return $items;
+}
+
+/**
+ * Implements hook_weight_features_default_settings().
+ */
+function ca_video_gallery_weight_features_default_settings() {
+  $settings = array();
+
+  $settings['ca_video'] = array(
+    'enabled' => 1,
+    'range' => 100,
+    'menu_weight' => 0,
+    'default' => 0,
+    'sync_translations' => 0,
+  );
+
+  return $settings;
 }
