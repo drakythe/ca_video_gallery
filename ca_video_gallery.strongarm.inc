@@ -162,7 +162,7 @@ function ca_video_gallery_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'weight_range_ca_video';
-  $strongarm->value = '50';
+  $strongarm->value = '100';
   $export['weight_range_ca_video'] = $strongarm;
 
   $strongarm = new stdClass();

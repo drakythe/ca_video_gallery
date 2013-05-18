@@ -13,7 +13,7 @@ function ca_video_gallery_user_default_roles() {
   // Exported role: video admin.
   $roles['video admin'] = array(
     'name' => 'video admin',
-    'weight' => '3',
+    'weight' => 3,
     'machine_name' => 'video_admin',
   );
 
